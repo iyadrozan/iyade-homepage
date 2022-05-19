@@ -1,6 +1,12 @@
-.center {
+.custom404 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 10rem;
+    align-items: center;
+}
+
+.custom404>a {
+    width: 30%;
 }
