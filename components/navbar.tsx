@@ -9,9 +9,10 @@ export default function navbar() {
         <header className="header" id="header">
             <div className={`${styles.nav} container padd-15`} >
                 <motion.div whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.9 }}>
-                    <a href="/" className={styles['nav-logo']}>
+                    <Link href="/"><a className={styles['nav-logo']}>
                         <h1>Iyade</h1>
                     </a>
+                    </Link>
                 </motion.div>
                 <div className={styles['nav-menu']} id="nav-menu">
                     <ul className={styles['nav-list']}>
@@ -20,7 +21,7 @@ export default function navbar() {
                             <Link href="/work"><a className={styles['nav-link']}>Work</a></Link>
                         </li>
                         <li className={styles['nav-item']}>
-                            <Link href="/project"><a className={styles['nav-link']}>Posts</a></Link>
+                            <Link href="/post"><a className={styles['nav-link']}>Posts</a></Link>
                         </li>
                         <li className={styles['nav-item']}>
                             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.99 }}>

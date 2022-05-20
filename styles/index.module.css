@@ -14,6 +14,7 @@
     border-radius: 7px 7px 7px 7px;
     padding: 0.5rem 0.5rem;
     width: 100%;
+    text-align: center;
 }
 
 .intro>p>a {
@@ -22,9 +23,4 @@
 
 .intro>p>a:hover {
     text-decoration: underline;
-}
-
-.Canvas {
-    position: relative;
-    height: 400px !important;
 }

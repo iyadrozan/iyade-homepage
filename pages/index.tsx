@@ -1,19 +1,19 @@
 import type { NextPage } from 'next'
-import Navbar from '../components/navbar'
 import styles from '../styles/index.module.css'
-import Image from 'next/image'
-import ControlBox from '../components/controlBox'
+import Section from '../components/section'
+import LayoutsNI from '../components/layouts/nav-ilustration'
 
 const Home: NextPage = () => {
   return (
     <>
-      <Navbar />
+      <LayoutsNI />
       <section className={`${styles.home} section`}>
         <div className="container">
-          <div className={styles.intro}>
-            <ControlBox />
-            <p>Hi, I'm a Front-end Developer based in Gorontalo, Indonesia.</p>
-          </div>
+          <Section>
+            <div className={styles.intro}>
+              <p>Hi, I'm a Front-end Developer based in Gorontalo, Indonesia.</p>
+            </div>
+          </Section>
         </div>
       </section>
     </>

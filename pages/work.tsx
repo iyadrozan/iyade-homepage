@@ -1,10 +1,14 @@
-import Navbar from "../components/navbar"
+import LayoutsNI from "../components/layouts/nav-ilustration"
 
 export default function work() {
   return (
     <>
-      <Navbar />
-      <h1>My work page testing...</h1>
+      <LayoutsNI />
+      <section className="section">
+        <div className="container">
+          <h1>Testing...</h1>
+        </div>
+      </section>
     </>
   )
 }
