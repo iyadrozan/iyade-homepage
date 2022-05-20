@@ -9,4 +9,5 @@
 
 .custom404>a {
     width: 30%;
+    box-shadow: var(--box-shadow);
 }

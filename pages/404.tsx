@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 export default function Custom404() {
     const router = useRouter();
@@ -19,7 +20,9 @@ export default function Custom404() {
         <div className='container'>
             <section className={styles.custom404}>
                 <Image src='/image/404.svg' width={500} height={500} alt="logo" />
-                <a className='btn btn-default' href="/"><FontAwesomeIcon icon={faHouse} /> Back to home</a>
+                <motion.div whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+                    <a className='btn btn-default' href="/"><FontAwesomeIcon icon={faHouse} /> Back to home</a>
+                </motion.div>
             </section>
         </div>
     )

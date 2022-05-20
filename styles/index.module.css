@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+.home .intro {
+    max-width: 600px;
+}
+
+.intro>p {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border-radius: 7px 7px 7px 7px;
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+}
+
+.intro>p>a {
+    font-weight: 600;
+}
+
+.intro>p>a:hover {
+    text-decoration: underline;
+}
+
+.Canvas {
+    position: relative;
+    height: 400px !important;
+}

@@ -3,15 +3,14 @@
 :root {
 
   
-  --color-darkgreen: rgb(95, 113, 97);
-  --color-green: rgb(109, 139, 116);
-  --color-white: white;
+  --color-secondary: rgb(95, 113, 97);
+  --color-primary: rgb(109, 139, 116);
   --color-grey: rgb(208, 201, 192);
-  --color-lightgrey: rgb(239, 234, 216);
-  --color-black: rgb(27, 26, 23);
+  --color-light: rgb(255, 255, 255);
+  --color-dark: rgb(27, 26, 23);
 
   --body-font: 'Rubik', sans-serif;
-  --h1-font-size: 2.25rem;
+  --h1-font-size: 2rem;
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
@@ -19,7 +18,7 @@
   --font-medium: 400;
   --font-semi-bold: 600;
 
-  --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  --box-shadow: 0px 2px 5px 0px #474747;
   --border-radius: 1.25rem;
   --card-padding: 1.9rem 0.95rem;
   --m-0-5: 0.5rem;
@@ -45,15 +44,16 @@ textarea {
 }
 
 body {
-  background-color: var(--color-lightgrey);
-  color: var(--color-black);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   line-height: 1.7;
   font-weight: var(--font-medium);
 }
 
-a {
+a, ul {
   color: inherit;
   text-decoration: none;
+  list-style: none;
 }
 
 h1,
@@ -83,8 +83,16 @@ h3 {
 /* Reuseable Class */
 
 .container {
-  max-width: 968px;
+  max-width: 768px;
   margin: auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .section .container {
@@ -118,24 +126,9 @@ h3 {
 
 .btn-default {
   display: inline-block;
-  color: var(--color-white);
+  color: var(--color-light);
   vertical-align: middle;
-  background-color: var(--color-green);
+  background-color: var(--color-primary);
   transform: perspective(1px) translateZ(0);
 }
 
-.btn-default:focus {
-  animation-name: button-push;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-
-@keyframes button-push {
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
